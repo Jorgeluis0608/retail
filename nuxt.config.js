@@ -9,7 +9,7 @@ const storeUrl = process.env.SWELL_STORE_URL;
 const vaultUrl = process.env.SWELL_VAULT_URL;
 
 export default {
-  
+
     head: {
       link: [
         { rel: 'stylesheet', href: 'https://unpkg.com/ionicons@3.0.0/dist/css/ionicons.min.css' }
@@ -28,8 +28,6 @@ export default {
         );
       }
     },
-
-    components: true,
 
     vue: {
       config: {
@@ -125,7 +123,7 @@ export default {
 
     buildModules: [
       // '@nuxt/components',
-      // https://go.nuxtjs.dev/eslint      
+      // https://go.nuxtjs.dev/eslint
       '@nuxtjs/eslint-module',
       // https://go.nuxtjs.dev/stylelint
       '@nuxtjs/stylelint-module',
@@ -256,7 +254,7 @@ export default {
             name: 'index',
             path: '/',
             component: resolve(__dirname, 'pages/_slug.vue'),
-          }, 
+          },
           {
             name: 'contact',
             path: '/contact',
@@ -266,7 +264,7 @@ export default {
             name: 'quotation',
             path: '/get-quotation',
             component: resolve(__dirname, 'pages/quotation/index.vue'),
-          }, 
+          },
           {
             name: 'signin',
             path: '/account/signin',
@@ -281,12 +279,12 @@ export default {
           //   name: 'all-products',
           //   path: '/all-products',
           //   component: resolve(__dirname, 'pages/all-products/products.vue'),
-          // }, 
+          // },
           // {
           //   name: 'detail-product',
           //   path: '/detail-product',
           //   component: resolve(__dirname, 'pages/all-products/detail-product.vue'),
-          // }, 
+          // },
           // {
           //   name: 'about',
           //   path: '/about',
@@ -307,5 +305,5 @@ export default {
     env: {
       cdnHost: process.env.CDN_HOST || 'https://cdn.schema.io',
     },
-  
+
 }
