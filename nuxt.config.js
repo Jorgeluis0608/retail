@@ -29,6 +29,8 @@ export default {
       }
     },
 
+    components: true,
+
     vue: {
       config: {
         devtools: !isProduction,
